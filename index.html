@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sri Vamsi - Business Analyst</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">Sri Vamsi</div>
+            <div class="nav-logo">
+                <span class="logo-text">Sri Vamsi</span>
+                <div class="logo-glow"></div>
+            </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -20,6 +23,11 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -27,38 +35,61 @@
     <section id="home" class="hero">
         <div class="hero-background">
             <div class="floating-particles"></div>
+            <div class="gradient-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">Sri Vamsi</h1>
-            <h2 class="hero-subtitle">Business Analyst</h2>
-            <p class="hero-description">Bridging Business Goals with Data Insights</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#" class="btn btn-secondary" id="download-resume">
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Sri Vamsi</span>
+                </h1>
+                <h2 class="hero-subtitle">Business Analyst</h2>
+                <p class="hero-description">Bridging Business Goals with Data Insights</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn btn-secondary" id="download-resume">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">
+                <span class="title-text">About Me</span>
+                <div class="title-underline"></div>
+            </h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>Hi, I'm Sri Vamsi, a driven and detail-oriented Business Analyst currently pursuing my education at <strong>The University of Texas at Dallas</strong>, with a strong focus on data analytics and strategic decision-making.</p>
-                    
-                    <p>I'm proud to be a recipient of the <strong>Dean's Excellence Scholarship</strong>, awarded for academic excellence and potential. My time at UTD has been marked by a strong academic record, hands-on project work, and continuous growth in analytical thinking and problem-solving.</p>
-                    
-                    <p>With a background in Commerce and Finance from <strong>NMIMS University</strong>, I bring a business-first mindset to data. At UTD, I'm sharpening that edge through practical experience with tools like SQL, Tableau, Python, and Excel. I love working at the intersection of data, business, and storytelling—translating complex data into simple, actionable insights.</p>
-                    
-                    <p>When I'm not analyzing data or polishing dashboards, you'll probably catch me yelling at the TV—cheering for <strong>Max Verstappen</strong> speeding past everyone in F1, praying for <strong>PSG</strong> to hold their defense for once, watching the <strong>Dallas Mavericks</strong> break my heart in the fourth quarter, or defending <strong>Rohit Sharma</strong> in cricket debates like it's a full-time job.</p>
-                    
-                    <p class="about-motto">I believe in staying curious, staying caffeinated, and always asking the next "why?"</p>
+                <div class="about-card">
+                    <div class="about-text">
+                        <p class="intro-text">Hi, I'm Sri Vamsi, a driven and detail-oriented Business Analyst currently pursuing my education at <strong>The University of Texas at Dallas</strong>, with a strong focus on data analytics and strategic decision-making.</p>
+                        
+                        <p>I'm proud to be a recipient of the <strong>Dean's Excellence Scholarship</strong>, awarded for academic excellence and potential. My time at UTD has been marked by a strong academic record, hands-on project work, and continuous growth in analytical thinking and problem-solving.</p>
+                        
+                        <p>With a background in Commerce and Finance from <strong>NMIMS University</strong>, I bring a business-first mindset to data. At UTD, I'm sharpening that edge through practical experience with tools like SQL, Tableau, Python, and Excel. I love working at the intersection of data, business, and storytelling—translating complex data into simple, actionable insights.</p>
+                        
+                        <p>I'm currently building my portfolio through projects that involve interactive dashboards, business case analysis, and exploratory data visualization, with a focus on Python, SQL, and Tableau.</p>
+                        
+                        <p class="fun-fact">When I'm not analyzing data or polishing dashboards, you'll probably catch me yelling at the TV—cheering for <strong>Max Verstappen</strong> speeding past everyone in F1 🏎️, praying for <strong>PSG</strong> to hold their defense for once ⚽, watching the <strong>Dallas Mavericks</strong> break my heart in the fourth quarter 🏀, or defending <strong>Rohit Sharma</strong> in cricket debates like it's a full-time job 🏏.</p>
+                        
+                        <p class="motto">I believe in staying curious, staying caffeinated, and always asking the next "why?" ☕</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,31 +98,52 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills Snapshot</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="fas fa-chart-bar"></i>
-                    <span>Tableau</span>
+            <h2 class="section-title">
+                <span class="title-text">Skills Snapshot</span>
+                <div class="title-underline"></div>
+            </h2>
+            <div class="skills-container">
+                <div class="skill-item" data-skill="tableau">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <span class="skill-name">Tableau</span>
+                    <div class="skill-glow"></div>
                 </div>
-                <div class="skill-item">
-                    <i class="fas fa-database"></i>
-                    <span>SQL</span>
+                <div class="skill-item" data-skill="sql">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span class="skill-name">SQL</span>
+                    <div class="skill-glow"></div>
                 </div>
-                <div class="skill-item">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
+                <div class="skill-item" data-skill="python">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <span class="skill-name">Python</span>
+                    <div class="skill-glow"></div>
                 </div>
-                <div class="skill-item">
-                    <i class="fas fa-file-excel"></i>
-                    <span>Excel</span>
+                <div class="skill-item" data-skill="excel">
+                    <div class="skill-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <span class="skill-name">Excel</span>
+                    <div class="skill-glow"></div>
                 </div>
-                <div class="skill-item">
-                    <i class="fas fa-chart-line"></i>
-                    <span>R</span>
+                <div class="skill-item" data-skill="r">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span class="skill-name">R</span>
+                    <div class="skill-glow"></div>
                 </div>
-                <div class="skill-item">
-                    <i class="fas fa-brain"></i>
-                    <span>Machine Learning</span>
+                <div class="skill-item" data-skill="ml">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <span class="skill-name">Machine Learning</span>
+                    <div class="skill-glow"></div>
                 </div>
             </div>
         </div>
@@ -100,102 +152,141 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">
+                <span class="title-text">Featured Projects</span>
+                <div class="title-underline"></div>
+            </h2>
             <div class="projects-grid">
                 <div class="project-card" data-repo="time-series-forecasting-rossmann">
-                    <div class="project-image">
-                        <i class="fas fa-chart-line project-icon"></i>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-status">
+                            <div class="status-dot"></div>
+                            <span>Active</span>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3>Time Series Forecasting - Rossmann</h3>
-                        <p>Developed time-series and regression-based models to predict six weeks of daily sales for 1,115 Rossmann stores across Europe using historical, promotional, and holiday data.</p>
+                        <h3 class="project-title">Time Series Forecasting - Rossmann</h3>
+                        <p class="project-description">Developed time-series and regression-based models to predict six weeks of daily sales for 1,115 Rossmann stores across Europe using historical, promotional, and holiday data.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Time Series</span>
                             <span class="tag">Machine Learning</span>
                             <span class="tag">Forecasting</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/vamkotss/time-series-forecasting-rossmann" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <button class="project-link view-details" data-repo="time-series-forecasting-rossmann">
-                                <i class="fas fa-eye"></i> View Details
-                            </button>
-                        </div>
                     </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vamkotss/time-series-forecasting-rossmann" target="_blank" class="project-link github-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <button class="project-link details-link" data-repo="time-series-forecasting-rossmann">
+                            <i class="fas fa-eye"></i>
+                            <span>Details</span>
+                        </button>
+                    </div>
+                    <div class="project-glow"></div>
                 </div>
 
                 <div class="project-card" data-repo="Machine-Learning-Analysis-of-Surge-Pricing-and-Location-Impacts">
-                    <div class="project-image">
-                        <i class="fas fa-car project-icon"></i>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="project-status">
+                            <div class="status-dot"></div>
+                            <span>Active</span>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3>Surge Pricing Analysis</h3>
-                        <p>Machine learning analysis of surge pricing and location impacts in ride-sharing services, providing insights for dynamic pricing strategies.</p>
+                        <h3 class="project-title">Surge Pricing Analysis</h3>
+                        <p class="project-description">Machine learning analysis of surge pricing and location impacts in ride-sharing services, providing insights for dynamic pricing strategies and operational optimization.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Machine Learning</span>
                             <span class="tag">Data Analysis</span>
                             <span class="tag">Pricing Strategy</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/vamkotss/Machine-Learning-Analysis-of-Surge-Pricing-and-Location-Impacts" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <button class="project-link view-details" data-repo="Machine-Learning-Analysis-of-Surge-Pricing-and-Location-Impacts">
-                                <i class="fas fa-eye"></i> View Details
-                            </button>
-                        </div>
                     </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vamkotss/Machine-Learning-Analysis-of-Surge-Pricing-and-Location-Impacts" target="_blank" class="project-link github-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <button class="project-link details-link" data-repo="Machine-Learning-Analysis-of-Surge-Pricing-and-Location-Impacts">
+                            <i class="fas fa-eye"></i>
+                            <span>Details</span>
+                        </button>
+                    </div>
+                    <div class="project-glow"></div>
                 </div>
 
                 <div class="project-card" data-repo="roster-management-and-strategy-optimization">
-                    <div class="project-image">
-                        <i class="fas fa-users project-icon"></i>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-status">
+                            <div class="status-dot"></div>
+                            <span>Active</span>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3>Roster Management & Strategy Optimization</h3>
-                        <p>Strategic optimization of roster management systems using data-driven approaches to improve operational efficiency and resource allocation.</p>
+                        <h3 class="project-title">Roster Management & Strategy Optimization</h3>
+                        <p class="project-description">Strategic optimization of roster management systems using data-driven approaches to improve operational efficiency and resource allocation.</p>
                         <div class="project-tags">
                             <span class="tag">Strategy</span>
                             <span class="tag">Optimization</span>
                             <span class="tag">Data Analysis</span>
                             <span class="tag">Operations</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/vamkotss/roster-management-and-strategy-optimization" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <button class="project-link view-details" data-repo="roster-management-and-strategy-optimization">
-                                <i class="fas fa-eye"></i> View Details
-                            </button>
-                        </div>
                     </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vamkotss/roster-management-and-strategy-optimization" target="_blank" class="project-link github-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <button class="project-link details-link" data-repo="roster-management-and-strategy-optimization">
+                            <i class="fas fa-eye"></i>
+                            <span>Details</span>
+                        </button>
+                    </div>
+                    <div class="project-glow"></div>
                 </div>
 
                 <div class="project-card" data-repo="car-price-prediction-r">
-                    <div class="project-image">
-                        <i class="fas fa-car-side project-icon"></i>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <div class="project-status">
+                            <div class="status-dot"></div>
+                            <span>Active</span>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3>Car Price Prediction</h3>
-                        <p>Predictive modeling for car prices using R, implementing various regression techniques and statistical analysis for accurate price estimation.</p>
+                        <h3 class="project-title">Car Price Prediction</h3>
+                        <p class="project-description">Predictive modeling for car prices using R, implementing various regression techniques and statistical analysis for accurate price estimation.</p>
                         <div class="project-tags">
                             <span class="tag">R</span>
                             <span class="tag">Regression</span>
                             <span class="tag">Predictive Modeling</span>
                             <span class="tag">Statistics</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/vamkotss/car-price-prediction-r" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <button class="project-link view-details" data-repo="car-price-prediction-r">
-                                <i class="fas fa-eye"></i> View Details
-                            </button>
-                        </div>
                     </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vamkotss/car-price-prediction-r" target="_blank" class="project-link github-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <button class="project-link details-link" data-repo="car-price-prediction-r">
+                            <i class="fas fa-eye"></i>
+                            <span>Details</span>
+                        </button>
+                    </div>
+                    <div class="project-glow"></div>
                 </div>
             </div>
         </div>
@@ -204,21 +295,42 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
+            <h2 class="section-title">
+                <span class="title-text">Let's Connect</span>
+                <div class="title-underline"></div>
+            </h2>
             <div class="contact-content">
-                <p>Ready to discuss data insights, business strategies, or just chat about F1 and cricket?</p>
-                <div class="contact-links">
-                    <a href="mailto:your.email@example.com" class="contact-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email</span>
+                <p class="contact-intro">Ready to discuss data insights, business strategies, or just chat about F1 and cricket?</p>
+                <div class="contact-grid">
+                    <a href="mailto:sxs220279@utdallas.edu" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p>sxs220279@utdallas.edu</p>
+                        </div>
+                        <div class="contact-glow"></div>
                     </a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
+                    <a href="https://linkedin.com/in/sri-vamsi-sunkara" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>LinkedIn</h3>
+                            <p>Connect with me</p>
+                        </div>
+                        <div class="contact-glow"></div>
                     </a>
-                    <a href="https://github.com/vamkotss" target="_blank" class="contact-link">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
+                    <a href="https://github.com/vamkotss" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>GitHub</h3>
+                            <p>View my code</p>
+                        </div>
+                        <div class="contact-glow"></div>
                     </a>
                 </div>
             </div>
@@ -227,14 +339,17 @@
 
     <!-- Project Details Modal -->
     <div id="project-modal" class="modal">
+        <div class="modal-backdrop"></div>
         <div class="modal-content">
-            <span class="close">&times;</span>
             <div class="modal-header">
                 <h2 id="modal-title">Project Details</h2>
+                <button class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
             <div class="modal-body">
-                <div class="loading" id="modal-loading">
-                    <i class="fas fa-spinner fa-spin"></i>
+                <div class="modal-loading" id="modal-loading">
+                    <div class="loading-spinner"></div>
                     <p>Loading project details...</p>
                 </div>
                 <div id="modal-project-content" class="project-details-content"></div>
